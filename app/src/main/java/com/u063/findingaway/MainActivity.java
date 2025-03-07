@@ -24,34 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         finding();
     }
-    /*void finding(){
-        path.add(new pathDictionary(0));
-        path.get(0).put(0,1); //0 - координата, 1 - был
-        int find = 100000;
-        boolean result = false;
-        int steps=0;
-        while(!result) {
-            for (int i = 0; i < path.size(); i++) {
-                Dictionary dictionary = path.get(0).getDictionary();
-                if (dictionary.get(path.get(0).getLastCoord() + 1) == null) {
-                    path.add(new pathDictionary(path.get(0)));
-                    path.get(path.size() - 1).put(path.get(0).getLastCoord() + 1, 1);
-                    path.get(path.size() - 1).steps=path.get(0).steps+1;
-                }
-                if (dictionary.get(path.get(0).getLastCoord() - 1) == null) {
-                    path.add(new pathDictionary(path.get(0)));
-                    path.get(path.size() - 1).put(path.get(0).getLastCoord() - 1, 1);
-                    path.get(path.size() - 1).steps=path.get(0).steps+1;
-                }
-                path.remove(0);
-                if(path.get(path.size() - 1).getLastCoord()==find){
-                    result=true;
-                }
-                if(result) break;
-            }
-        }
-        Log.e("Result","steps: "+path.get(path.size() - 1).steps+", size of array: "+(path.size()));
-    }*/
     void finding(){
         path.add(new pathDictionary(0));
         path.get(0).put(0,1); //0 - координата, 1 - был
